@@ -1,14 +1,15 @@
-# Docker PHP-FPM 8.3 and Nginx
-
-*Notice:* [Use this repository if you're looking for PHP 8.3 with Xdebug 3](https://github.com/IshtarStar/docker-compose-nginx-phpfpm-xdebug-mariadb)
+# Docker PHP-FPM 8.x and Nginx
 
 ![nginx](https://img.shields.io/badge/nginx-brightgreen.svg)
 ![php](https://img.shields.io/badge/php-fpm-brightgreen.svg)
  
 * Built on the lightweight
 * Multi-platform, supporting
-* Uses PHP 8.3 for better performance, lower CPU and memory usage
+* Uses PHP 8.x for better performance, lower CPU and memory usage
 * Use only resources when traffic exists
-* KISS principle (Keep It Simple, Stupid)
 
-[Blog-Post: Dockerize your PHP application with Nginx and PHP8.3 FPM](https://marc.it/dockerize-application-with-nginx-and-php8/)
+# How it works?
+
+1. Select PHP version by editing file: ```./docker/php-fpm/Dockerfile```
+2. Define container name and port by editing file: ```./.env```
+3. Run docker container by follwoing command ```docker-compose up -d``` or if you want to shutdown application use following command ```docker-compose down```
